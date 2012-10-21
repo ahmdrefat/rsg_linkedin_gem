@@ -1,0 +1,6 @@
+[1m[37m      invoke[0m  active_record
+[1m[31m      remove[0m    db/migrate/20121020083339_create_oxen.rb
+[1m[31m      remove[0m    app/models/ox.rb
+[1m[37m      invoke[0m    test_unit
+[1m[31m      remove[0m      test/unit/ox_test.rb
+[1m[31m      remove[0m      test/fixtures/oxen.yml

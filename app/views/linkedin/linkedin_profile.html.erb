@@ -1,0 +1,78 @@
+<div class="row">
+  <div class="span4">
+  	<div class="thumbnail">
+      <img src="<%= @basic_profile.picture_url %>" style="float: left;margin: 5px;">
+      <h3><%= @basic_profile.formatted_name %></h3>
+      <h4><%= @basic_profile.headline %></h4>
+      <br>
+      <p><%= @basic_profile.summary %></p>
+    </div>
+  </div>
+  <div class="span4">
+  	<div class="well">
+	    <h5>Interests</h5>
+	    <p><%= @full_profile.interests %></p>
+	    <br>
+	  	<h5>Associations</h5>
+	  	<p><%= @full_profile.associations %></p>
+	    <br>
+	    <h5>Honors</h5>
+	    <p><%= @full_profile.honors %></p>
+	    <br>
+		</div>
+  </div>
+</div>
+
+<div class="row" style="margin-top: 16px;">
+  <div class="span10">
+		<h1>Positions</h1>
+  	<table class="table table-striped">
+  		<tr>
+  			<th>Title</th>
+  			<th>Summary</th>
+  			<th>Company Name</th>
+  			<th>Is Current</th>
+  			<th>Start Date</th>
+  			<th>End Date</th>
+  		</tr>
+  		<% @positions.each do |p| %>
+  			<tr>
+  				<th><%= p.title %></th>
+  				<th><%= p.summary %></th>
+  				<th><%= p.company %></th>
+  				<th><%= p.is_current %></th>
+  				<th><%= p.start_date %></th>
+  				<th><%= p.end_date %></th>
+  			</tr>
+  		<% end %>
+		</table>
+  </div>
+</div>
+
+<div class="row" style="margin-top: 16px;">
+  <div class="span10">
+  	<h1>Educations</h1>
+  	<table class="table table-striped">
+  		<tr>
+  			<th>School Name</th>
+  			<th>Field of Study</th>
+  			<th>Degree</th>
+  			<th>Activities</th>
+  			<th>Notes</th>
+  			<th>Start Date</th>
+  			<th>End Date</th>
+  		</tr>
+  		<% @educations.each do |e| %>
+  			<tr>
+  				<th><%= e.school_name %></th>
+  				<th><%= e.field_of_study %></th>
+  				<th><%= e.degree %></th>
+  				<th><%= e.activities %></th>
+  				<th><%= e.notes %></th>
+  				<th><%= e.start_date %></th>
+  				<th><%= e.end_date %></th>
+  			</tr>
+  		<% end %>
+		</table>
+  </div>
+</div>

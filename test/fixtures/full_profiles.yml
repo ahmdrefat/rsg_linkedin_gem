@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  associations: MyString
+  honors: MyString
+  interests: MyString
+  user_id: 1
+
+two:
+  associations: MyString
+  honors: MyString
+  interests: MyString
+  user_id: 1
